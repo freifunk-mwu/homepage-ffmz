@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* CSS Document */
+/* Fonts */
 
 @font-face {
     font-family: 'LiberationSansRegular';
@@ -10,8 +10,8 @@
          url('./fonts/LiberationSans-Regular-webfont.svg#LiberationSansRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'LiberationSansItalic';
     src: url('./fonts/LiberationSans-Italic-webfont.eot');
@@ -21,8 +21,8 @@
          url('./fonts/LiberationSans-Italic-webfont.svg#LiberationSansItalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'LiberationSansBold';
     src: url('./fonts/LiberationSans-Bold-webfont.eot');
@@ -32,28 +32,30 @@
          url('./fonts/LiberationSans-Bold-webfont.svg#LiberationSansBold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'LiberationMonoRegular';  
+    font-family: 'LiberationMonoRegular';
     src: url('./fonts/LiberationMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'LiberationMonoItalic';  
+    font-family: 'LiberationMonoItalic';
     src: url('./fonts/LiberationMono-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'LiberationMonoBold';  
+    font-family: 'LiberationMonoBold';
     src: url('./fonts/LiberationMono-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Style */
 
 html,body {
     font-family: 'LiberationMonoRegular';
@@ -92,32 +94,32 @@ a:active { color:#181818; text-decoration:underline; }
 
 
 h1 {
-	font: 34px/34px 'LiberationSansBold', Arial, sans-serif;
-	letter-spacing: 0; 
-	margin: 0; 
-	padding: 20px 0 0 30px; 
+    font: 34px/34px 'LiberationSansBold', Arial, sans-serif;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 20px 0 0 30px;
     font-weight: normal;
- 	}
-	
+}
+
 h2 {
     font: 15px/19px 'LiberationMonoRegular', Arial, sans-serif;
-	letter-spacing: 0; 
-	margin: 0px; 
-	padding: 0px; 
+    letter-spacing: 0;
+    margin: 0px;
+    padding: 0px;
     text-transform: uppercase;
     font-weight: normal;
-    text-indent: 25px;   
-	}
+    text-indent: 25px;
+}
 
 h3 {
     font: 15px/19px 'LiberationMonoRegular', Arial, sans-serif;
-//  font: 18px/20px 'LiberationSansBold', Arial, sans-serif;    font-weight: normal;
-    letter-spacing: 0px; 
-    margin: 0px; 
-    padding: 0px; 
+    /*font: 18px/20px 'LiberationSansBold', Arial, sans-serif;    font-weight: normal;*/
+    letter-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
     text-transform: uppercase;
-    text-indent: 25px;   
-    }    
+    text-indent: 25px;
+    }
 
 .einzug {
     *text-indent: 25px;
@@ -165,7 +167,7 @@ h3 {
     height:60px;
     z-index:9666;
     text-align: center;
-    text-transform: normal;         
+    text-transform: normal;
     background: white;
 }
 
@@ -179,17 +181,17 @@ h3 {
         text-align: center;
     }
 
-        #navi li {   
+        #navi li {
             display:inline;
             line-height:60px;
             vertical-align: middle;
             list-style-type: none;
-            padding: 0 7px;    
+            padding: 0 7px;
         }
 
-        #navi li.current, #navi li.current a:link {  
-           color:#fe2836; 
-           text-decoration:underline; 
+        #navi li.current, #navi li.current a:link {
+           color:#fe2836;
+           text-decoration:underline;
         }
 
        #navi li a:link { color:#181818; text-decoration: none; }
@@ -215,14 +217,14 @@ h3 {
         right:0;
         bottom:0;
         background-color:black;
-    } 
+    }
 
     #fixed-wrapper{
         position:fixed;
         top:0;
         left:0;
         width:100%;
-        height:100%; 
+        height:100%;
         }
 
 #fix1 {
@@ -310,38 +312,6 @@ a#contact_a:link, a#contact_a:visited {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #facebook {
     position: absolute;
     top: 10px;
@@ -387,8 +357,8 @@ a#contact_a:link, a#contact_a:visited {
 
 #interim {
     position: absolute;
-    /font-family: "LiberationSansBold";
-    /   text-transform: none;
+    font-family: "LiberationSansBold";
+    text-transform: none;
     top: 20px;
     left: 56px;
     text-align: left;
@@ -399,7 +369,7 @@ a#contact_a:link, a#contact_a:visited {
     position: relative;
     top: 80px;
     padding: 50px;
-    text-indent: 25px;   
+    text-indent: 25px;
 
 }
 
@@ -407,7 +377,7 @@ a#contact_a:link, a#contact_a:visited {
     min-width: 400px;
     max-width: 550px;
     position: relative;
-    padding: 0 30px 0 30px; 
+    padding: 0 30px 0 30px;
 
 }
 
@@ -436,15 +406,15 @@ p {
 
 
 #ffmzlogo {
-	position: absolute;
-	vertical-align: center;
-	left:50%;
-	top: 50%;
-	margin-top: -210px;
-	margin-left: -200px;
-	background-image:url('./images/ffmz_logo.png');
-	width: 400px;
-	height: 400px;
+    position: absolute;
+    vertical-align: center;
+    left:50%;
+    top: 50%;
+    margin-top: -210px;
+    margin-left: -200px;
+    background-image:url('./images/ffmz_logo.png');
+    width: 400px;
+    height: 400px;
 }
 
 #impressum-link {
@@ -495,7 +465,5 @@ p {
     font-size: 22px;
     line-height: 23px;
     font-family: "LiberationSansBold";
-
-
 }
 
