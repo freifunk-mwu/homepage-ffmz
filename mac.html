@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>FFMZ IP2MAC</title>
+    <script type="text/javascript">
+        function dec2hex(i)
+        {
+            var res = "error";
+            if (i >= 0 && i <= 15)
+            {
+                res = "0" + Number(i).toString(16);
+            }
+            else if (i >= 16 && i <= 255)
+            {
+                res = Number(i).toString(16);
+            }
+            return res;
+        }
+
+        function conv(v, field)
+        {
+            var f = document.getElementById(field);
+            f.innerHTML = dec2hex(v)
+        }
+
+    </script>
+</head>
+<body>
+
+<form>10.37.<input type="text" onKeyUP="conv(this.value, 'a')" size="3" maxlength="3" />.<input type="text" onKeyUP="conv(this.value, 'b')" size="3" maxlength="3" /></form>
+
+<p>
+    02:00:0a:25:<span id="a">??</span>:<span id="b">??</span>
+</p>
+
+</body>
+</html>
+
