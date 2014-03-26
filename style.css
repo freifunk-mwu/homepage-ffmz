@@ -143,7 +143,7 @@ h3 {
         z-index:100;
     }
 
-        .content {
+        .wrappercontent {
             background:white;
             padding:100px 0 30px 0;
             -moz-box-shadow: 0 0 10px 0px #333;
@@ -311,14 +311,6 @@ a#contact_a:link, a#contact_a:visited {
 }
 
 
-
-#facebook {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index:3000;
-}
-
 #social-small {
     position: absolute;
     top: 20px;
@@ -365,7 +357,7 @@ a#contact_a:link, a#contact_a:visited {
 }
 
 
-#content {
+.content {
     position: relative;
     top: 80px;
     padding: 50px;
@@ -373,7 +365,7 @@ a#contact_a:link, a#contact_a:visited {
 
 }
 
-#content_left, #content_right {
+.content_left, .content_right {
     min-width: 400px;
     max-width: 550px;
     position: relative;
@@ -381,11 +373,11 @@ a#contact_a:link, a#contact_a:visited {
 
 }
 
-#content_left {
+.content_left {
     float: left;
 }
 
-#content_right {
+.content_right {
     float: left;
     padding-top: 40px;
     padding-left:60px;
@@ -461,7 +453,7 @@ p {
     transform:rotate(360deg);
 }
 
-#mediumtype {
+.mediumtype {
     font-size: 22px;
     line-height: 23px;
     font-family: "LiberationSansBold";
