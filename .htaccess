@@ -1,7 +1,7 @@
 Redirect 301 /satzung http://wiki.freifunk-mainz.de/w/Verein/Satzung
 Redirect 301 /verein http://wiki.freifunk-mainz.de/w/Verein
 Redirect 301 /howto http://wiki.freifunk-mainz.de/w/Howto/Tinc-Node_konfiguration
-
+Redirect 301 /spenden http://www.freifunk-mainz.de/#spenden
 Redirect 301 /liste http://lists.freifunk.net/mailman/listinfo/mainz-freifunk.net
 
 Redirect 301 /blog http://blog.freifunk-mainz.de
