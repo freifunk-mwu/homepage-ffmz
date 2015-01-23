@@ -273,6 +273,12 @@ h3 {
     z-index:9555;
 }
 
+
+.fixed99 {
+    position:fixed;
+    z-index:99;
+}
+
 a#contact_a:link, a#contact_a:visited {
     left: 30px;
     bottom: 10px;
