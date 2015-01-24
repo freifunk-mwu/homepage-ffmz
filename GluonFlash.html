@@ -39,20 +39,20 @@
 
   <!-- FLASH GLUON ************************* !-->
   
-  <div id="flashgluon" class="panel wrappercontent">
+  <div id="flashgluon" class="panel">
       <div class="content_left">
           <h2>(Flash Gluon)</h2>
           <h3>Wie pr&auml;pariere ich einen neuen Router</h3>
           <p>Du möchtest dir einen Router anschaffen und ihn für Freifunk vorbereiten? Hier folgen ein paar Tipps, wie du vorgehen kannst!</p>
 
           <span class="mediumtype einzug">Schritt für Schritt:</span><br />
-          <span class="einzug"><a href="#Sprunkmarke">&#8618; Router besorgen</a></span><br />
-          <span class="einzug"><a href="#Sprunkmarke">&#8618; Auspacken</a> </span><br />
-          <span class="einzug"><a href="#Sprunkmarke">&#8618; Freifunk-Image besorgen</a></span><br />
-          <span class="einzug"><a href="#Sprunkmarke">&#8618; Koordinaten für Anzeige auf FF-Karte</a></span><br />
-          <span class="einzug"><a href="#Sprunkmarke">&#8618; Freifunk-Image drauf packen</a></span><br />
-          <span class="einzug"><a href="#Sprunkmarke">&#8618; Mit wenigen Klicks richtig einstellen</a></span><br />
-          <span class="einzug"><a href="#Sprunkmarke">&#8618; Aufstellen und anschließen</a></span><br />
+          <span class="einzug">&#8618; <a href="#routerbesorgen">Router besorgen</a></span><br />
+          <span class="einzug">&#8618; <a href="#routerauspacken">Auspacken</a> </span><br />
+          <span class="einzug">&#8618; <a href="#routerimagedownload">Freifunk-Image besorgen</a></span><br />
+          <span class="einzug">&#8618; <a href="#routerinfossammeln">Standort auf Karte bestimmen</a></span><br />
+          <span class="einzug">&#8618; <a href="#Sprunkmarke">Freifunk-Image drauf packen</a></span><br />
+          <span class="einzug">&#8618; <a href="#Sprunkmarke">Mit wenigen Klicks richtig einstellen</a></span><br />
+          <span class="einzug">&#8618; <a href="#Sprunkmarke">Aufstellen und anschließen</a></span><br />
       </div>      
 
       <div class="content_right">
@@ -60,13 +60,95 @@
           <span class="bu">Fig.n&thinsp;&mdash;&thinsp;Text unter dem Bild</span>
       </div>
       <div class="content_right">
-          <a href="#sprungmarke_woandershin" class="trigger"><img src="noch_ein_bild.gif" alt="ffmz-beschreibungstext"></a><br />
+          <a href="#sprungmarke_woandershin" class="trigger"><img src="noch_ein_bild.gif" alt="ffmz-beschreibungstext" border="0"></a><br />
           <span class="bu">Fig.2&thinsp;&mdash;&thinsp;Text unter dem Bild</span>
       </div>
 
 
 	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;">
+      <br style="clear: both;"> 
+
+      <!-- Router besorgen ******************************* -->
+	  <p>&nbsp;</p>
+      <div id="routerbesorgen" class="content_left">
+          <span class="mediumtype einzug">Router besorgen</span><br />
+          <p>Auch wenn du schon einen Router für deinen eigenen DSL-Anschluß hast, wirst du dir für das Freifunk-Netz einen weiteren Router zulegen müssen. 
+          Das liegt daran, dass er eine neue Betriebssoftware benötigt. Er wird per Kabel dann später mit deinem eigenen Router verbunden, wenn du einen hast.
+          </p> 
+          <p>Am Freifunk-Netz kannst du aber auch ohne eigenen DSL-Anschluß teilnehmen. Dann brauchst du aber bereits Freifunk-Router in deiner Reichweite, mit denen 
+          er sich dann verbinden kann.</p>
+                    
+          <h3>Kaufen</h3>
+          <p>Du brauchst eine Entscheidungshilfe?</p> 
+          <p>Wir empfehlen aktuell den TP-LINK TL-WR841N und den TP-LINK TL-WR841ND (der gleiche nur mit abnehmbaren Antennen) als Einstiegsgeräte. 
+          Für größere Installationen bieten sich ein TP-LINK TL-WDR3600 oder TL-WDR4300 an.</p>
+          <p>Eine umfassende Liste, welche Geräte unterstützt werden, findest du hier: <br>
+          <a href="http://wiki.freifunk.net/Freifunk_Firmware_Gluon/Hardware" target="_blank">Freifunk-Gluon-Hardware-Verzeichnis</a></p>
+      </div>      
+	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+
+
+      <!-- Auspacken ******************************* -->
+	  <p>&nbsp;</p>
+      <div id="routerauspacken" class="content_left">
+          <span class="mediumtype einzug">Auspacken</span><br />
+          <p>Du hast deinen Router vor dir auf dem Tisch?! Dazu solltest du ein Netzteil haben, die evtl. abschraubbaren Antennen und ein kurzes Stück LAN-Kabel,
+          das wir für die Verbindung zwischen deinem Computer und dem Router benötigen. Den Rest: Anleitungen und CDs benötigen wir nicht. 
+          </p> 
+                    
+          <h3>Vorbereitungen</h3>
+          <p>Bevor du loslegen kannst, solltest du ein paar Dinge vorbereiten. Du hast nämlich gleich keine Interverbindung mehr, wenn du dich mit deinem Router verbindest.
+          Daher empfiehlt es sich am Computer die nachfolgenden Punkte erst zu erledigen, bevor du deinen neuen Router mit einem Rechner verbindest.</p>
+          <p>Lasse diese Internet-Seite im Browser bis zum Ende geöffnet!</p>
+          
+      </div>      
+	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+
+
+      <!-- FF-Image besorgen ******************************* -->
+	  <p>&nbsp;</p>
+      <div id="routerimagedownload" class="content_left">
+          <span class="mediumtype einzug">Freifunk-Image besorgen</span><br />
+          <p>Herauszufinden welche Gluon-Firmware du brauchst, ist ganz einfach. Der Router-Typ (1) und die Hardware-Version (2) stehen auf der Rückseite des Routers.
+          </p> 
+          <p>Öffne das Verzeichnis mit unserer Freifunk-Software und suche anhand des unten aufgeführten Beispiels deine passende Datei. Beachte, dass wir
+          die Software getrennt für Freifunk-Mainz und Freifunk-Wiesbaden anbieten. Je nachdem wo du den Router aufstellen willst, solltest du hier die 
+          richtige Entscheidung treffen:</p>
+          <ul>
+          	<li>Verzeichnis für <a href="http://firmware.freifunk-mwu.de/mainz/stable/factory/" target="_blank">Freifunk-Mainz</a> öffnen<br>
+          	<li>Verzeichnis für <a href="http://firmware.freifunk-mwu.de/wiesbaden/stable/factory/" target="_blank">Freifunk-Wiesbaden</a> öffnen<br>
+          </ul>
+	  	  <p>&nbsp;</p>
+	
+          <img src="images/FirmwareIndex.png" alt="Auszug aus dem Downloadverzeichnis"><br />
+          <span class="bu">Fig.2&thinsp;&mdash;&thinsp;Finde den richtigen Eintrag anhand Modell und Hardware-Nummer</span>
+          <p>&nbsp;</p>        
+	  	  <p>Klicke auf den gewünschten Eintrag und speichere dir diese Datei auf deinem Rechner für später.</p>
+          
+      </div>      
+      <div class="content_right">
+          <img src="images/Router-model-version.png" alt="Unterseite eines Routers"><br />
+          <span class="bu">Fig.1&thinsp;&mdash;&thinsp;Auf der Unterseite steht immer die Modell-Nummer und die Hardware-Version</span>
+      </div>
+	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+
+      <!-- FF-Image besorgen ******************************* -->
+	  <p>&nbsp;</p>
+      <div id="routerinfossammeln" class="content_left">
+          <span class="mediumtype einzug">Standort auf Karte bestimmen</span><br />
+          <p>Wir haben eine <a href="http://map.freifunk-mwu.de/geomap.html" target="_blank">Live-Karte</a>, wo jeder die gerade aktiven Freifunk-Knoten sehen kann.
+          Wenn du willst, das auch dein Knoten später darauf erscheint, benötigst du die Koordinaten. Auch das ist recht einfach. </p>
+          <p>Rufe die Karte auf und zoome ganz dicht auf deinen gewünschten Standort heran. Dann klickst du oben auf den Button "Koordinaten beim nächsten Klick anzeigen".
+          Als nächstes klickst du auf die Stelle in der Karte, wo er erscheinen soll. Nun werden die Koordinaten in einer Box angezeigt. Kopiere sie dir über die Zwischenablage
+          an einen sicheren Platz auf deinem Computer. Wir brauchen sie erst am Schluß wieder.</p> 
+
+      </div>      
+	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+
   </div>
 </div>
 </body>
