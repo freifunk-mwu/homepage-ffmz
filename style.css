@@ -172,13 +172,14 @@ h3 {
 }
 
     #navi {
-        margin: 0px;
-        padding:0;
-        width:700px;
+        margin-left: 20px;
+        margin-top: 0px;
+		padding:0;
+        width:770px;
         display:block;
         height:60px;
-        margin:0 auto;
-        text-align: center;
+        text-align: left;
+        
     }
 
         #navi li {
@@ -271,6 +272,11 @@ h3 {
 .fixed {
     position:fixed;
     z-index:9555;
+}
+
+.fixedMore {
+    position:fixed;
+    z-index: 9999;
 }
 
 .fixed99 {
@@ -417,9 +423,9 @@ p {
 
 #impressum-link {
     position: fixed;
-    right: 30px;
+    left: 20px;
     bottom: 10px;
-    text-align: right;
+    text-align: left;
     color:white;
 }
 

@@ -16,19 +16,22 @@
 <div id="wrapper">
   <div id="navigation" style="position: fixed; top: 0px; left: 0px;">
     <ul id="navi">
-         <li class="current"><a href="#informationen">Informationen</a></li>
-         <li><a href="#community">Community</a></li>
-         <li><a href="#termine">Termine</a></li>
-         <li><a href="#karte">Karte</a></li>
-         <li><a href="#spenden">Spenden</a></li>
-         <li><a href="#faq">FAQ</a></li>
-         <li><a href="#impressum">Impressum</a></li>
+         <li><a href="./index.html#informationen">Informationen</a></li>
+         <li><a href="./index.html#community">Community</a></li>
+         <li><a href="./index.html#termine">Termine</a></li>
+         <li><a href="./index.html#karte">Karte</a></li>
+         <li><a href="./index.html#spenden">Spenden</a></li>
+         <li><a href="./index.html#faq">FAQ</a></li>
+         <li><a href="./index.html#impressum">Impressum</a></li>
+         <li class="current"><a href="#flashgluon">Router-Konfig</a></li>
      </ul>
 
-	   <div id="interim">
+<!-- 	   <div id="interim">
 	       <a href="#top">Zur Startseite</a>
 	   </div>
+ -->
 	   <div id="social-small">
+	       <a href="#top" style="text-decoration: none;">&nbsp;</a>
 	       <a href="http://blog.freifunk-mainz.de/">Blog</a> <a href="http://wiki.freifunk-mainz.de/">Wiki</a> <a href="https://www.facebook.com/FreifunkMainz">FB</a> <a href="https://twitter.com/freifunkmainz">TW</a>
 	       <a href="https://plus.google.com/109829391285444937045" rel="publisher">Google+</a>
 	   </div>
@@ -52,9 +55,11 @@
           <span class="einzug">&#8618; <a href="#routerinfossammeln">Standort auf Karte bestimmen</a></span><br />
           <span class="einzug">&#8618; <a href="#routerflashen">Freifunk-Image drauf packen</a></span><br />
           <span class="einzug">&#8618; <a href="#routergluonconfig">Mit wenigen Klicks richtig einstellen</a></span><br />
-          <span class="einzug">&#8618; <a href="#Sprunkmarke">Aufstellen und anschließen</a></span><br />
+          <span class="einzug">&#8618; <a href="#routerready">Aufstellen und anschließen</a></span><br />
+          <span class="einzug">&#8618; <a href="#routernochmal">Konfiguration ändern</a></span><br />
       </div>      
 
+<!-- --------------------------- noch kein Bedarf ------------------
       <div class="content_right">
           <p>Hier kann ein Bild hin<br />
           <span class="bu">Fig.n&thinsp;&mdash;&thinsp;Text unter dem Bild</span>
@@ -63,7 +68,7 @@
           <a href="#sprungmarke_woandershin" class="trigger"><img src="noch_ein_bild.gif" alt="ffmz-beschreibungstext" border="0"></a><br />
           <span class="bu">Fig.2&thinsp;&mdash;&thinsp;Text unter dem Bild</span>
       </div>
-
+---------------------------------------------------------------  -->
 
 	  <!--   Umbruch in neue Zeile  -->
       <br style="clear: both;"> 
@@ -251,8 +256,102 @@
           <img src="images/Freifunk_meshvpn.png" alt="Internetverbindung per VPN"><br />
           <span class="bu">Fig.12&thinsp;&mdash;&thinsp;Wenn du einen DSL-Anschluss hast, nutze ihn ruhig.</span>
 	      
+	  	  <p>&nbsp;</p>
+	      <h3>Bandbreite einschränken</h3>
+	      <p>Wenn du einen normalen Internet-Anschluss hast (16 Mbit und mehr), wird dein Freifunk-Router im alltäglichen Betrieb nicht allzuviel von deiner Bandbreite in Anspruch nehmen.</p> 
+	      <p>Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen". Daraufhin erscheinen zwei neue Felder. 
+	      Trage in die beiden Felder die gewünschten Grenzen in Kbit/s ein. Wir empfehlen mindestens "8000" für Downstream und "500" für Upstream. </p>
+		  <p>Unsere Empfehlung: die Begrenzung nicht zu aktivieren.</p> 
+          <img src="images/2014-10-27_20_13_22-mz-6466b3595aa8_-_SpeedLimit_LuCI.jpg" alt="Sinnvolle Werte, falls du einschränken willst"><br />
+          <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Sinvolle Werte, wenn die Bandbreite eingeschränkt werden soll.</span>
+	      
+	  	  <p>&nbsp;</p>
+	      <h3>Koordinaten setzen</h3>
+	      <p>Wenn du möchtest, dass dein neuer Knoten auf unserer Live-Karte auftauchen soll, sind hier deine am Anfang notierten Koordinaten einzutragen.</p> 
+          <img src="images/2014-10-27_20_15_06-mz-6466b3595aa8_-_Koordinaten_-_LuCI.jpg" alt="Die Korrdinaten hier eingeben"><br />
+          <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Die Koordinaten werden für die Karten-Dartstellung benötigt.</span>
+	      
+	  	  <p>&nbsp;</p>
+	      <h3>Kontaktdaten</h3>
+	      <p>Es kann immer mal einen Grund geben, wo sich die Admins unseres Netzes mit dir in Verbindung setzen möchten. Dazu ist es empfehlenswert, wenn 
+	      du an dieser Stelle etwas hinterlässt wie Telefonnummer oder E-Mail Adresse. Diese Information wird nicht auf unserer Karte erscheinen und bleibt somit nur den Administratoren zugänglich.</p> 
+          <img src="images/Mz-6466b3595aa8-kontakt.png" alt="Die Kontaktdaten hier eingeben"><br />
+          <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Die Kontaktdaten sind nur für den Notfall und nur Admins zugänglich.</span>
+
+	  	  <p>&nbsp;</p>
+	      <h3>Speichern &amp; Neustart</h3>
+	      <p>Es fehlt jetzt nur noch den Knopf rechts unten "Speichern &amp; Neustart" zu klicken. Sobald du das machst, wird dein Router fertig eingerichtet.</p>
+	      <p>Auf der dann erscheinenden Abschluss-Seite bekommst du die letzten Hinweise. Zum Beispiel wird dort der VPN-Schlüssel ausgegeben, den du uns per E-Mail schicken solltest.
+	      Den müssen unsere Server kennen, wenn du den Router an deinen DSL-Anschluss anklemmen willst. Solange der uns nicht bekannt ist, wird er keine Verbindung bekommen.</p>
+	      <p>Der Schlüssel erscheint innerhalb des gestrichelten Feldes. Ist er nicht vorhanden, dann hast du vergessen "VPN-Mesh" in der Konfigurations-Seite anzuschalten.</p>
+	      
+          <img src="images/600px-2014-10-27_20_24_28-mz-6466b3595aa8_fertigmeldung.jpg" alt="Fertigmeldung und Schlüsselanzeige"><br />
+          <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Wenn der Schlüssel angezeigt wird, sende ihn uns per E-Mail zu.</span>
+
 	  </div>  	        
+ 	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+
+  	  <p>&nbsp;</p>
+	  <!-- Aufstellen und anschließen ******************************* -->
+	  <div id="routerready" class="content_left">
+          <span class="mediumtype einzug">Aufstellen und anschließen</span><br />
+          <br />
+          <h3>Kabel rein</h3>
+          <p>Du hast angeklickt, dass du deinen DSL-Anschluss benutzen willst (VPN-Mesh)? Dann kommt auf der Rückseite des Routers jetzt die "blaue" Buchse (WAN) zum Einsatz.</p>
+          <p>Verbinde mit einem LAN-Kabel diese blaue Buchse mit deinem eigenen Router am DSL-Anschluss.<p>
+
+	      <img src="images/Blaue_buchse.png" alt="Verbindung blau auf eigenen Router stecken"><br />
+	      <span class="bu">Fig.14&thinsp;&mdash;&thinsp;Diese Buchse verwenden und mit DSL-Anschluss verbinden.</span>
+
+	  	  <p>&nbsp;</p>
+          <h3>Warum nicht auf Karte sichtbar</h3>
+          <p>Wann dein Router auf der Live-Karte sichtbar wird, unterliegt folgenden Bedingungen:</p>
+          <ul>
+          	<li>Du hast Koordinaten bei der Konfiguration angegeben
+          	<li>Dein Router ist eingeschaltet
+          	<li>Dein Router muss mit dem Freifunk-Netz verbunden sein, da wir die Konfig-Daten regelmäßig einsammeln kommen
+          	<li>Verbunden heißt: Entweder hört er andere Freifunk-Knoten per Funk, oder die VPN-Verbindung steht nach Eintragen des Schlüssels
+          	<li>Das einmalige Eintragen des Schlüssels wird dir per E-Mail rückbestätigt. Das kann etwas dauern, da es ein manueller Vorgang ist
+          	<li>Es kann bis zu 15 Minuten dauern, bis sich auf der Karte etwas tut - also bitte Geduld
+          </ul>
+          <p><p>
+	  	  <p>&nbsp;</p>
+
+
+	  </div>
+  	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+	  
+  	  <p>&nbsp;</p>
+	  <!-- Konfig ändern ******************************* -->
+	  <div id="routernochmal" class="content_left">
+          <span class="mediumtype einzug">Konfiguration ändern</span><br />
+          <br />
+          <h3>Hups, nochmal</h3>
+          <p>Wenn die Konfiguration einmal abgeschlossen ist, meldet sich der Router nicht mehr in diesem Wizard-Modus. Es gibt aber einen Weg, nachträglich in diesen Modus zurück zu kommen und
+          alle Daten zu ändern. Die gesetzten Werte findest du gefüllt in den Feldern vor.</p>
+
+          <h3>Konfiguration ändern</h3>
+          <p>Verbinde dazu deinen Computer wieder per LAN-Kabel mit einer gelben Buchse deines Routers.<p>
+          <p>Halte im aktiven Betrieb für 10 Sekunden den Reset-Knopf auf der Geräte-Rückseite gedrückt, bis der Router neu startet</p>
+          <p>Nach einer gewissen Wartezeit, erhält dein Rechner wieder eine Adresse vom Router zugewiesen und dann ist er per Browser wieder über <a href="http://192.168.1.1" target="_blank">http://192.168.1.1</a>
+          erreichbar. Die "Sternchen"-Lampe blinkt wieder langsam vor sich hin, wenn es soweit ist.</p>
+
+          <h3>Speichern &amp; Neustart</h3>
+		  <p>Wenn du fertig bist, klicke wieder auf "Speichern &amp; Neustart" um den Vorgang abzuschließen. Jetzt wichtig: wenn sich der Schlüssel geändert hat, was in seltenen Fällen passieren kann, 
+		  dann melde ihn wieder per E-Mail zum Eintragen.
+
+	  	  <p>&nbsp;</p>
+
+
+	  </div>
+  	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+
+
   </div>
+        <a id="nach_oben" class="fixed trigger invert" href="#flashgluon" style="display: inline;">Nach Oben</a>
 
 
 </div>
