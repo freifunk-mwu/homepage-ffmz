@@ -50,8 +50,8 @@
           <span class="einzug">&#8618; <a href="#routerauspacken">Auspacken</a> </span><br />
           <span class="einzug">&#8618; <a href="#routerimagedownload">Freifunk-Image besorgen</a></span><br />
           <span class="einzug">&#8618; <a href="#routerinfossammeln">Standort auf Karte bestimmen</a></span><br />
-          <span class="einzug">&#8618; <a href="#Sprunkmarke">Freifunk-Image drauf packen</a></span><br />
-          <span class="einzug">&#8618; <a href="#Sprunkmarke">Mit wenigen Klicks richtig einstellen</a></span><br />
+          <span class="einzug">&#8618; <a href="#routerflashen">Freifunk-Image drauf packen</a></span><br />
+          <span class="einzug">&#8618; <a href="#routergluonconfig">Mit wenigen Klicks richtig einstellen</a></span><br />
           <span class="einzug">&#8618; <a href="#Sprunkmarke">Aufstellen und anschließen</a></span><br />
       </div>      
 
@@ -80,8 +80,10 @@
                     
           <h3>Kaufen</h3>
           <p>Du brauchst eine Entscheidungshilfe?</p> 
+          <h3>Empfehlung</h3>
           <p>Wir empfehlen aktuell den TP-LINK TL-WR841N und den TP-LINK TL-WR841ND (der gleiche nur mit abnehmbaren Antennen) als Einstiegsgeräte. 
           Für größere Installationen bieten sich ein TP-LINK TL-WDR3600 oder TL-WDR4300 an.</p>
+          <h3>Unterstützte Modelle</h3>
           <p>Eine umfassende Liste, welche Geräte unterstützt werden, findest du hier: <br>
           <a href="http://wiki.freifunk.net/Freifunk_Firmware_Gluon/Hardware" target="_blank">Freifunk-Gluon-Hardware-Verzeichnis</a></p>
       </div>      
@@ -94,12 +96,12 @@
       <div id="routerauspacken" class="content_left">
           <span class="mediumtype einzug">Auspacken</span><br />
           <p>Du hast deinen Router vor dir auf dem Tisch?! Dazu solltest du ein Netzteil haben, die evtl. abschraubbaren Antennen und ein kurzes Stück LAN-Kabel,
-          das wir für die Verbindung zwischen deinem Computer und dem Router benötigen. Den Rest: Anleitungen und CDs benötigen wir nicht. 
+          das wir für die Verbindung zwischen deinem Computer und dem Router benötigen. Den Rest: Papier und CDs benötigen wir nicht. 
           </p> 
                     
           <h3>Vorbereitungen</h3>
           <p>Bevor du loslegen kannst, solltest du ein paar Dinge vorbereiten. Du hast nämlich gleich keine Interverbindung mehr, wenn du dich mit deinem Router verbindest.
-          Daher empfiehlt es sich am Computer die nachfolgenden Punkte erst zu erledigen, bevor du deinen neuen Router mit einem Rechner verbindest.</p>
+          Daher empfiehlt es sich am Computer die nachfolgenden Punkte erst zu erledigen, bevor du deinen neuen Router mit dem Rechner verbindest.</p>
           <p>Lasse diese Internet-Seite im Browser bis zum Ende geöffnet!</p>
           
       </div>      
@@ -129,13 +131,13 @@
           
       </div>      
       <div class="content_right">
-          <img src="images/Router-model-version.png" alt="Unterseite eines Routers"><br />
+          <img src="images/Router-model-version.png" width="90%" height="90%" alt="Unterseite eines Routers"><br />
           <span class="bu">Fig.1&thinsp;&mdash;&thinsp;Auf der Unterseite steht immer die Modell-Nummer und die Hardware-Version</span>
       </div>
 	  <!--   Umbruch in neue Zeile  -->
       <br style="clear: both;"> 
 
-      <!-- FF-Image besorgen ******************************* -->
+      <!-- Standort auf Karte bestimmen ******************************* -->
 	  <p>&nbsp;</p>
       <div id="routerinfossammeln" class="content_left">
           <span class="mediumtype einzug">Standort auf Karte bestimmen</span><br />
@@ -149,7 +151,110 @@
 	  <!--   Umbruch in neue Zeile  -->
       <br style="clear: both;"> 
 
+
+      <!-- Image flashen ******************************* -->
+	  <p>&nbsp;</p>
+      <div id="routerflashen" class="content_left">
+          <span class="mediumtype einzug">Freifunk-Image drauf packen</span><br />
+          <p>Nun ist der Zeitpunkt gekommen, wo du den neuen Router mit deinem PC verbinden solltest, damit wir die neue Software - man nennt es auch "Image" oder die
+          "Firmware" - aufspielen können.</p>
+          
+          <h3>Anschließen</h3>
+          <p>Siehe Fig.3: Bitte schließe deinen Router (1) an eine Steckdose an – Das Kabel dazu ist dabei (3). Die Antenne (2) kannst du jetzt oder auch später aufschrauben. 
+          Verbinde dann den Router mit dem beiliegenden LAN-Kabel (4) mit Deinem Computer. </p>
+	  	  <p>&nbsp;</p>
+          <img src="images/Gelbe_buchse.png" alt="Anschlüsse auf der Rückseite"><br />
+          <span class="bu">Fig.4&thinsp;&mdash;&thinsp;Die Buchsen haben verschiedene Farben.</span>
+	  	  <p>&nbsp;</p>
+	  	  <p>Stecke dafür das Kabel in eine der gelben Buchsen. </p>
+      </div>      
+      <div class="content_right">
+          <img src="images/Dein_router.png" alt="Router und Zubehör"><br />
+          <span class="bu">Fig.3&thinsp;&mdash;&thinsp;So oder ähnlich sollte der Inhalt aussehen.</span>
+	  	  <p>&nbsp;</p>
+	  </div>
+	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+      <div class="content_left">
+          <h3>Im Menü folgen</h3>
+      	  <p>Jetzt kannst du den Router einfach über den Browser konfigurieren. Dazu rufst du in deinen Browser folgende Adresse auf: 
+      	  <a href="http://192.168.0.1" target="_blank">http://192.168.0.1</a>. Bevor du weitermachst, musst du dich erst anmelden. 
+      	  Der Benutzername ist bei TP-Link Routern "admin" und das Passwort "admin". Wie man bei anderen Geräten in die Einstellungen kommt 
+      	  ist unterschiedlich und steht im Handbuch des jeweiligen Gerätes.<p>
+		  <p>Dein Browserfenster müsste nun so aussehen – Folge hier der Verknüpfung “System Tools” im Menü links unten. </p>
+
+	  	  <p>&nbsp;</p>
+          <img src="images/TP_link_start.png" alt="Menü der Original-Software von TP-Link"><br />
+          <span class="bu">Fig.5&thinsp;&mdash;&thinsp;Im Menü links unten auf "System Tools" klicken</span>
+	  	  <p>&nbsp;</p>
+
+		  <p>Als nächste wählst du aus dem Menü “Firmware Upgrade” (1). Danach die gespeicherte Freifunk-Software auswählen (2). 
+		  Nach einem Klick auf “Upgrade” (3) beginnt der Prozess.</p>
+
+	  	  <p>&nbsp;</p>
+          <img src="images/TP_link_firmware.png" alt="Menü der Original-Software von TP-Link"><br />
+          <span class="bu">Fig.6&thinsp;&mdash;&thinsp;Im Menü links unten auf "Firmware Upgrade" klicken</span>
+	   
+	  	  <p>&nbsp;</p>
+          <img src="images/TP_link_firmware_file.png" alt="Menü der Original-Software von TP-Link"><br />
+          <span class="bu">Fig.7&thinsp;&mdash;&thinsp;Die Aktion will noch einmal bestätigt werden.</span>
+		   
+	  	  <p>&nbsp;</p>
+          <img src="images/TP_link_upgrade_progress.png" alt="Diese Aktion nicht unterbrechen!"><br />
+          <span class="bu">Fig.8&thinsp;&mdash;&thinsp;Wenn der Laufbalken einmal loslegt wird es spannend.</span>
+	  	  <p>&nbsp;</p>
+		  
+          <h3>Einspielen beendet</h3>
+      	  <p>Nachdem die Firmware fertig eingespielt ist, startet der Router neu. Das dauert so zwischen 1-2 Minuten. 
+      	  Dass der Router neu startet merkst du auch beim Betrachten der Lampen. Es gibt einen Moment da gehen alle Lampen 
+      	  gleichzeit kurz an, dann wieder aus. Jetzt beginnt die Startprozedur. Wenn danach das Lämpchen mit dem Zahnrad 
+      	  gemütlich vor sich hin blinkt, ist der Router im Config-Mode angekommen.</p>
+		  <p>Jetzt ist der Router nicht mehr unter der angegeben Adresse sichtbar und eine Fehlermeldung erscheint (siehe Fig.9). 
+		  Das ist gut so. Denn nun läuft die neue, tolle Freifunk Firmware auf deinem Router. <p>
+	  	  
+          <img src="images/TP_link_firmware_reboot_finished.png" alt="Kein Anschluss mehr unter dieser Adresse"><br />
+          <span class="bu">Fig.9&thinsp;&mdash;&thinsp;Die Adresse hat sich geändert, daher gibt es hier keinen Anschluss mehr.</span>
+      </div>
+  	  <!--   Umbruch in neue Zeile  -->
+      <br style="clear: both;"> 
+
+	  <p>&nbsp;</p>
+	  <!-- Gluon konfig ******************************* -->
+	  <div id="routergluonconfig" class="content_left">
+          <span class="mediumtype einzug">Mit wenigen Klicks richtig einstellen</span><br />
+          <br />
+          <h3>Verbindung</h3>
+          <p>Du erreichst deinen Router jetzt unter der geänderten Adresse <a href="http://192.168.1.1" target="_blank">http://192.168.1.1</a></p>
+
+	      <img src="images/600px-Mz-6466b3595aa8_-_Node_WI_-_LuCI_(top).png" alt="Verbindung wieder herstellen"><br />
+	      <span class="bu">Fig.10&thinsp;&mdash;&thinsp;Unter dieser Adresse meldet sich die Konfigurationsseite.</span>
+	  	  <p>&nbsp;</p>
+	      <p>Wie du rechts oben erkennen kannst, befindest du dich im "Wizzard"-Modus. Alle notwendigen Daten zur Inbetriebnahme sind 
+	      auf dieser einen Seite zusammengefaßt. Sie auzufüllen reicht vollkommen aus! <i>Nur wenn du spezielle Anforderungen hast, ist ein Blick in den Experten-Modus lohnenswert.</i></p> 
+	  	  <!--   Umbruch in neue Zeile  -->
+	      <br style="clear: both;"> 
+	      
+	      <h3>Name dieses Knotens</h3>
+	      <p>Als erstes solltest du deinem Router einen Namen geben. Nimm einfach einen, der dir gefällt und vielleicht etwas über den 
+	      Standort des Routers aussagt. Im Beispiel verwenden wir “Lisas-Freifunk”. Bitte achte darauf, dass keine Leerzeichen im Namen 
+	      enthalten sind. Verwende stattdessen einfach einen Bindestrich (“-“) oder Unterstrich (“_”). </p> 
+          <img src="images/Freifunk_Nodename_Lisa.png" alt="Hier den Namen eingeben"><br />
+          <span class="bu">Fig.11&thinsp;&mdash;&thinsp;Hier den Namen eingeben. So erscheint er auf der Karte wenn gewünscht.</span>
+	      
+	  	  <p>&nbsp;</p>
+	      <h3>Internetverbindung nutzen</h3>
+	      <p>Wenn du bei "Mesh-VPN aktivieren" ein Häkchen setzt, wird über deinen Internet-Anschluss eine verschlüsselte Verbindung 
+	      zu den Freifunk-Servern hergestellt. Diese verbinden deinen Router dann mit weit entfernten Freifunk-Routern und dem Internet, ohne Störerhaftung.</p>
+	      <p>Wenn die Option deaktiviert bleibt, kann sich dein Router nur per Funk mit anderen Freifunk-Routern in der Nachbarschaft verbinden. 
+	      Internet-Zugang ist dann nur möglich, wenn einer der anderen Router ihn anbietet.</p>
+		  <p>Wir empfehlen dieses Häkchen zu setzen. </p> 
+          <img src="images/Freifunk_meshvpn.png" alt="Internetverbindung per VPN"><br />
+          <span class="bu">Fig.12&thinsp;&mdash;&thinsp;Wenn du einen DSL-Anschluss hast, nutze ihn ruhig.</span>
+	      
+	  </div>  	        
   </div>
+
+
 </div>
 </body>
 </html>
