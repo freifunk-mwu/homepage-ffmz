@@ -259,6 +259,11 @@ h3 {
     background-image: url('./images/start_rotate/6.jpg');
 }
 
+#fix6a {
+    z-index:6;
+    background-image: url('./images/start_rotate/6.jpg');
+}
+
 #fix7 {
     z-index:7;
     background-image: url('./images/start_rotate/2.jpg');
@@ -358,6 +363,16 @@ a#contact_a:link, a#contact_a:visited {
     z-index: 5;
     display: none;
 }
+
+#logo_small_top {
+    position: absolute;
+    top: 65px;
+    right: 15px;
+    width: 48px;
+    z-index: 5;
+    
+}
+
 
 #interim {
     position: absolute;

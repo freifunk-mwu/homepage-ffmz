@@ -65,6 +65,14 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     });
+    
+    $("#logo_small_top").click(function(e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+  	
 
 // • ------------------------------------------------------- menu invertieren
 
