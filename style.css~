@@ -230,7 +230,7 @@ h3 {
 
 #fix1 {
     z-index:1;
-    background-image: url('./images/start_rotate/1.jpg');
+    background-image: url('./images/start_rotate/4.jpg');
     height:100%;
 }
 
@@ -241,17 +241,17 @@ h3 {
 
 #fix3 {
     z-index:3;
-    background-image: url('./images/start_rotate/3.jpg');
+    background-image: url('./images/start_rotate/1.jpg');
 }
 
 #fix4 {
     z-index:4;
-    background-image: url('./images/start_rotate/4.jpg');
+    background-image: url('./images/start_rotate/7.jpg');
 }
 
 #fix5 {
     z-index:5;
-    background-image: url('./images/start_rotate/5.jpg');
+    background-image: url('./images/start_rotate/3.jpg');
 }
 
 #fix6 {
@@ -261,12 +261,12 @@ h3 {
 
 #fix6a {
     z-index:6;
-    background-image: url('./images/start_rotate/7.jpg');
+    background-image: url('./images/start_rotate/6.jpg');
 }
 
 #fix7 {
     z-index:7;
-    background-image: url('./images/start_rotate/8.jpg');
+    background-image: url('./images/start_rotate/2.jpg');
 }
 
 
