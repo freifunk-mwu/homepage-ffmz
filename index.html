@@ -7,7 +7,6 @@
     <meta name="keywords" content="Freifunk, Mesh, Open, Mainz, WLAN, Internetzugang, BATMAN, WiFi, Free, Wireless, Network, Hotspot, Node, Online, Offline, Digital, Networking">
     <meta name="viewport" content="initial-scale=0.5, width=device-width, user-scalable=yes" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/config.js"></script>
@@ -21,12 +20,11 @@
     <div id="navigation" >
             <ul id="navi">
                 <li class="current"><a href="#informationen">Informationen</a></li>
-                <li><a href="#community">Community</a></li>
+                <li><a href="#community">Mitmachen</a></li>
                 <li><a href="#termine">Termine</a></li>
-                <li><a href="#karte">Karte</a></li>
+                <li><a href="#karte">Hotspotkarte</a></li>
+                <li><a href="#verein">Verein</a></li>
                 <li><a href="#spenden">Spenden</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#gluonflash">Router-Konfig</a></li> 
                 <li><a href="#impressum">Impressum</a></li>
             </ul>
 
@@ -35,8 +33,8 @@
             </div>
  -->            
             <div id="social-small">
-                <a href="#top" style="text-decoration: none;">&nbsp;</a>
-                <a href="http://blog.freifunk-mainz.de/">Blog</a> <a href="http://wiki.freifunk-mainz.de/">Wiki</a> <a href="https://www.facebook.com/FreifunkMainz">FB</a> <a href="https://twitter.com/freifunkmainz">TW</a>
+					 <a href="#top" style="text-decoration: none;">&nbsp;</a>
+                <a href="Freifunk-Router-aufstellen.html">Router-Einrichtung</a> <a href="http://blog.freifunk-mainz.de/">Blog</a> <a href="http://wiki.freifunk-mainz.de/">Wiki</a> <a href="https://www.facebook.com/FreifunkMainz">FB</a> <a href="https://twitter.com/freifunkmainz">TW</a>
                 <a href="https://plus.google.com/109829391285444937045" rel="publisher">Google+</a>
             </div>
             <div id="logo_small_top">
@@ -76,15 +74,15 @@
             <p>
             Freifunk-Netze sind Selbstmach-Netze: Für den Aufbau nutzen Teilnehmer auf ihren WLAN-Routern spezielle Linuxdistributionen, z. B. die Freifunk-Firmware. Lokale Gruppen stellen die auf eigene Bedürfnisse angepasste Software dann auf ihren Websites zur Verfügung. In vielen Dörfern und Städten gibt es mittlerweile Freifunk-Gruppen und Zusammenkünfte, wo sich Interessierte treffen.
             </p>
-            <p class="mediumtype einzug">&#8618;&thinsp;<a href="#community" class="trigger">Wie werde ich Teil des Projekts?</a></p>
+            <p class="mediumtype einzug">&#8618;&thinsp;<a href="#community" class="trigger">Wie kann ich mitmachen?</a></p>
+	<p class="mediumtype einzug">&#8618;&thinsp;<a href="#karte" class="trigger">Wo gibt es Freifunk Hotspots?</a></p>
         </div>
         <div class="content_right">
             <img src="images/animation_mesh.gif" alt="animation_mesh"><br />
             <span class="bu">Fig.1&thinsp;&mdash;&thinsp;Nodes vermeshen sich und erweitern das Netz</span>
         </div>
         <div class="content_right">
-            <a href="#workshops" class="trigger"><img src="images/ffmz-workshop-webflyer-small-20130515.gif" alt="ffmz-workshop-webflyer"></a><br />
-            <span class="bu">Fig.2&thinsp;&mdash;&thinsp;Workshop am 25.&thinsp;und 26.&thinsp;Mai</span>
+           
         </div>
         <br style="clear: both;">
     </div>
@@ -97,28 +95,28 @@
 
     <div id="community" class="panel wrappercontent">
         <div class="content_left">
-            <h2>(Community)</h2>
+            <h2>(Mitmachen)</h2>
             <h3>Participate</h3>
-            <p>Es gibt viele Möglichkeiten wie du dich in das Projekt einbringen kannst. Der einfachste Weg mitzumachen ist, selbst einen Freifunk-Router
-            	aufzustellen. Das lohnt sich immer! Denn auch wenn sich noch keine anderen Freifunk-Router in deiner Nähe befinden, kann dein Knoten über
-            	einen DSL-Anschluss die Verbindung zum Freifunk-Netz aufbauen. Nur wenn viele Bürgerinnen und Bürger und Unternehmen mitmachen, wächst das 
-            	Freifunk-Netz immer weiter zusammen und unsere Vision wird Realität.</p>
-            <p>Je nach Modell kostet ein solcher Freifunk-Router zwischen 20 und 40 Euro. Eine Anleitung findest du hier: <a href="#gluonflash">Router-Konfig</a>.            	
-            </p>
-            <p>Worauf wartest du also noch? Werde jetzt ein Teil des Netzwerkes, indem du bei dir zuhause oder in der Firma einen Freifunk-Knoten aufstellst!</p>		
-            	
-            <p>Wenn du unsere <a href="http://lists.freifunk.net/mailman/listinfo/mainz-freifunk.net">Mailingsliste</a> abonnierst, kannst du deine Fragen loswerden oder um Unterstützung bitten.  
-            </p>
+            <p>Es gibt viele Möglichkeiten wie du dich in das Projekt einbringen kannst. Wir suchen hauptsächlich Leute in den folgenden Bereichen:
+					<li>Routerbetreiber! Auch wenn sich noch keine anderen Freifunk-Router in deiner Nähe befinden, kann dein Knoten über
+   	        	einen DSL-Anschluss die Verbindung zum Freifunk-Netz aufbauen. Nur wenn viele Bürgerinnen und Bürger und Unternehmen mitmachen, wächst das 
+	           	Freifunk-Netz immer weiter zusammen und unsere Vision wird Realität. Wie das geht und was du dafür brauchst, kannst du <a href="Freifunk-Router-aufstellen.html">hier nachlesen</a>.</li>            	
+            	<li>Backbone Aufbau (Orga, WLAN Technik)</li>
+            	<li>Veranstaltungen (Orga, Router aufsetzen, Spread the word)</li>
+            	<li>PR (Orga, Kontakte pflegen, Blog schreiben, Spread the word)</li>
+            	<li>Design (Flyer, Poster, T-Shirts, Webdesign)</li>
+            	<li>Haben wir was vergessen? Schreib uns auf der Mailingliste!</li>
+            </p>	
+            <p>	
+            	 Wenn du unsere <a href="http://lists.freifunk.net/mailman/listinfo/mainz-freifunk.net">Mailingsliste</a> abonnierst, bleibst du immer auf dem aktuellsten Stand. Dort kannst du auch gerne Fragen, wenn du Probleme hast oder eine neue Idee vorstellen willst.</p>
+            	 <p>Oder komme einfach zu einem <a href="#termine">Treffen</a> vorbei und wir finden was spannendes für dich zu tun.</p>
+				<p>Ausführliche Informationen zu vielen verschiedenen Themen im Freifunk Mainz Universum gibt es in unserem <a href="http://wiki.freifunk-mainz.de/">Wiki</a></p>			
+					
 
-                <span class="mediumtype einzug">
-                Tools zur Organisiation und Kommunikation:<br />
-                </span>
-                <span class="mediumtype"><span class="einzug">
-                <a href="http://wiki.freifunk-mainz.de/">&#8618; Wiki</a></span><br />
-                <!-- <span class="einzug"><a href="http://lists.freifunk.net/mailman/listinfo/mainz-freifunk.net">&#8618; Mailingliste</a> </span><br /> -->
-                <span class="einzug"><a href="http://pad.freifunk-mainz.de/">&#8618; Etherpad</a></span><br />
-            </span>
         </div>
+        <div class="content_right">
+			<a href="Freifunk-Router-aufstellen.html"><img src="images/router.jpeg" alt="Klicke hier um deinen eigenen Freifunk Router aufzusetzen"></a>
+		  </div>
         <br style="clear: both;">
     </div>
 
@@ -135,8 +133,11 @@
             <h3>Nächstes Treffen</h3>
             Wir treffen uns in regelmäßigen Abständen meistens im <a href="http://de.wikipedia.org/wiki/Holzturm_(Mainz)">Holzturm</a> in Mainz.<br />
             Genauere Informationen dazu werden in unserem <a href="http://blog.freifunk-mainz.de/">Blog</a> oder unserem <a href="http://blog.freifunk-mainz.de/termine/">Kalender</a> angekündigt.<br />
-            Interessierte sind herzlich eingeladen. Wir freuen uns auf euer Kommen!<br /><br />
+            Interessierte sind jederzeit herzlich eingeladen. Wir freuen uns auf euer Kommen!<br /><br />
             <br /><br />
+        </div>
+        <div class="content_right">
+			<a href="http://blog.freifunk-mainz.de/termine/"><img src="images/termine.png" height="400"></a>
         </div>
         <br style="clear: both;">
     </div>
@@ -153,11 +154,12 @@
         <div class="content_left">
             <h2>(Stadtkarte)</h2>
             <h3>Aktive Hotspots in Mainz</h3>
-            <p>Wie du deinen eigenen Freifunk-Knoten betreiben kannst, erfährst du hier auf der Homepage unter <a href="https://www.freifunk-mainz.de/Freifunk-Router-aufstellen.html">Router-Konfig</a>. </p>
-
-            <a href="http://map.freifunk-mainz.de/">
-            <img src="images/ffmap.jpg" alt="Freifunk Karte">
-            </a>
+            <p>Hier kannst du alle derzeit aktiven Freifunk Knoten (Hotspots) sehen. Jeder gründe Punkt stellt einen solchen dar. Eine größere Version der Karte ist <a href="http://map.freifunk-mainz.de/geomap" target="new">hier</a> verfügbar.</p>
+            <p>Wenn du einen eigenen Freifunk Router betreiben willst und damit auch auf dieser Karte auftauchen willst (optional), kannst du dir die  <a href="Freifunk-Router-aufstellen.html">Anleitung zur Routerkonfiguration</a> ansehen. </p>
+	
+        </div>
+        <div class="content_right">
+			<iframe src="http://map.freifunk-mainz.de/geomap" height="500" width="700"></iframe>
         </div>
         <br style="clear: both;">
     </div>
@@ -167,32 +169,47 @@
     <div id="fix5" class="panel image-content"></div>
 
 
-    <!-- KONTO ************************* !-->
+
+
+	 <!-- Verein ************************* !-->
+
+    <div id="verein" class="panel wrappercontent">
+        <div class="content_left">
+            <h2>(Verein)</h2>
+            <h3>Der Freifunk Mainz e.V.</h3>
+            <p>Um die Freifunk Community in Mainz, Wiesbaden und Umgebung zu unterstützen, wurde der Freifunk Mainz e.V. gegründet. Der Verein betreibt unter anderem einen Teil der Infrastruktur, sammelt Spenden und finanziert Werbematerialien und Technische Gerätschaften für Freifunk. Weitere Informationen zum Verein sind <a href="https://wiki.freifunk-mainz.de/w/Verein">im Wiki verfügbar.</a> </p>
+            <p>Der Beitritt kann ab demnächst auch online geschehen, derzeit ist leider nur ein <a href="https://wiki.freifunk-mainz.de/w/Verein/Aufnahmeantrag"> druckbares Formular</a> verfügbar. Der Mitgliedsbeitrag beträgt derzeit (2015) 1, 3 oder 6 € pro Monat. Juristische Personen können ebenfalls als Förderer Mitglied werden.</p>
+
+        </div>
+        <br style="clear: both;">
+    </div>
+
+    <!-- IMAGE 5 ************************* !-->
+
+    <div id="fix6" class="panel image-content"></div>
+
+
+     <!-- KONTO ************************* !-->
 
     <div id="spenden" class="panel wrappercontent">
         <div class="content_left">
             <h2>(Spenden)</h2>
-            <p>Am Liebsten sind uns Spenden über das Spendenortal <a href="https://www.betterplace.org/de/projects/21521-freifunk-mainz">Betterplace.org</a>. Dort wird das Ausstellen der Spendenbescheinigung für uns übernommen.</p>
-
-	     <p>Aber natürlich freuen wir uns auch sehr über eure ganz traditionelle Spende direkt auf unser Konto.</p>
+            <p> Wir können Spenden für alle unsere Tätigkeiten gebrauchen, es gibt im Freifunk e.V. ausschließlich ehrenamtliche Mitarbeiter. Ihr könnt uns über folgende Wege spenden:
+		<ul>
+		<li><a href="https://www.betterplace.org/de/projects/21521-freifunk-mainz">Betterplace.org</a>. (Dort wird das Ausstellen der Spendenbescheinigung für uns übernommen.)</li>
+		<li>Banküberweisung (Kontoverbindung siehe unten)</li>
+		<li>Paypal (vorstand@freifunk-mainz.de)</li>
+		<li>Bitcoin (<a href="https://blockchain.info/address/19BfEM9m3E3xAffymJJrUz68ejkpHL49RP">19BfEM9m3E3xAffymJJrUz68ejkpHL49RP</a>)</li>
+		</ul>
+</p>
+Um uns regelmäßig finanziell zu unterstützen, könnt ihr auch dem Freifunk Mainz e.V. beitreten. Mehr informationen dazu im Wiki: <a href="https://wiki.freifunk-mainz.de/w/Verein">Freifunk Mainz e.V.</a></p>
+<p>Wenn ihr für eure Spende eine Spendenquittung braucht, schickt uns bitte eine mail (vorstand@freifunk-mainz.de).</p>
                 <h3>Bankverbindung</h3>
                 <table>
                     <tbody>
                         <tr>
                             <td class="desc">Empfänger</td>
                             <td class="val">Freifunk Mainz e.V.</td>
-                        </tr>
-                        <tr>
-                            <td class="desc">Kontonummer</td>
-                            <td class="val">872 804 018</td>
-                        </tr>
-                        <tr>
-                            <td class="desc">Bankleitzahl</td>
-                            <td class="val">551 900 00</td>
-                        </tr>
-                        <tr>
-                            <td class="desc">Institut</td>
-                            <td class="val">Mainzer Volksbank</td>
                         </tr>
                         <tr>
                             <td class="desc">IBAN</td>
@@ -202,61 +219,21 @@
                             <td class="desc">BIC</td>
                             <td class="val">MVBM DE 55</td>
                         </tr>
+                        <tr>
+                            <td class="desc">Institut</td>
+                            <td class="val">Mainzer Volksbank</td>
+                        </tr>
                     </tbody>
                 </table><br />
-                <!-- <h3>PayPal</h3>
-                <p>bla@fasel.net</p><br /> -->
-                <h3>Bitcoin</h3>
-                <p><a href="https://blockchain.info/address/19BfEM9m3E3xAffymJJrUz68ejkpHL49RP">19BfEM9m3E3xAffymJJrUz68ejkpHL49RP</a></p><br />
+
 
         </div>
         <br style="clear: both;">
-    </div>
-
-
-
-    <!-- IMAGE 5 ************************* !-->
-
-    <div id="fix6" class="panel image-content"></div>
-
-
-    <!-- FAQ ************************* !-->
-
-    <div id="faq" class="panel wrappercontent">
-        <div class="content_left">
-            <h2>(FAQ)</h2>
-            <h3>Häufig gestellte Fragen</h3>
-            <h3>Was ist ein Node?</h3>
-            Ein Node ist ein modifizierter WLAN-Router der sich intelligent durch Meshing mit anderen Routern verbinden und die Reichweite vergrößern kann.
-            <br /><br />
-            Weitere Fragen sind in unserem <a href="http://wiki.freifunk-mainz.de/w/FAQ">Wiki</a> beantwortet
-        </div>
-        <br style="clear: both;">
-    </div>
-
-
-    <!-- IMAGE 5 ************************* !-->
-
-    <div id="fix6a" class="panel image-content"></div>
-
-
-    <!-- Router Gluon flashing ************************* !-->
-
-    <div id="gluonflash" class="panel wrappercontent">
-        <div class="content_left">
-            <h2>(Router Konfig)</h2>
-            <h3>Wie pr&auml;pariere ich einen neuen Router</h3>
-            <p>Du möchtest dir einen Router anschaffen und ihn für Freifunk vorbereiten? 
-            	</p>
-            <p>Klick dich weiter durch zur <a href="Freifunk-Router-aufstellen.html">Anleitung</a>
-        </div>
-        <br style="clear: both;">
-    </div>
-
-
+    </div>  
+    
 
     <!-- IMAGE 6 ************************* !-->
-    <div id="fix7" class="panel image-content"></div>
+   <!-- <div id="fix7" class="panel image-content"></div> -->
 
 
     <!-- IMPRESSUM ************************* !-->
