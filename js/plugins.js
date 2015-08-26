@@ -69,10 +69,12 @@
 
       $nav.each(function() {
         var linkHref = $(this).attr('href'),
-            divPos = $(linkHref).offset(),
-            topPos = divPos.top;
+            divPos = $(linkHref).offset();
+            if(divPos !== null) {
+              topPos = divPos.top;
 
-        onePageNav.sections[linkHref.substr(1)] = Math.round(topPos) - o.scrollOffset;
+              onePageNav.sections[linkHref.substr(1)] = Math.round(topPos) - o.scrollOffset;
+            }
       });
     };
 

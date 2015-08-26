@@ -179,7 +179,7 @@ h3 {
         display:block;
         height:60px;
         text-align: left;
-        
+
     }
 
         #navi li {
@@ -370,7 +370,7 @@ a#contact_a:link, a#contact_a:visited {
     right: 15px;
     width: 48px;
     z-index: 5;
-    
+
 }
 
 
@@ -493,4 +493,14 @@ td {
 #flashgluon {
             background:white;
             padding:100px 0 30px 0;
+}
+
+#map {
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.map-label {
+    display: inline-block;
+    min-width: 130px;
 }

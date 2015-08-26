@@ -65,14 +65,14 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     });
-    
+
     $("#logo_small_top").click(function(e) {
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     });
 
-  	
+
 
 // • ------------------------------------------------------- menu invertieren
 
@@ -80,6 +80,9 @@ $(document).ready(function(){
 
         // invert menu
         var offset = $("#impressum").offset();
+        if(offset === null) {
+            return;
+        }
 
         // fixe elemente umfärben
         if ( $(window).scrollTop() > $("#navi").height() && $(window).scrollTop() < offset.top - $("#impressum").height() ) {

@@ -7,8 +7,12 @@
     <meta name="keywords" content="Freifunk, Mesh, Open, Mainz, WLAN, Internetzugang, BATMAN, WiFi, Free, Wireless, Network, Hotspot, Node, Online, Offline, Digital, Networking">
     <meta name="viewport" content="initial-scale=0.5, width=device-width, user-scalable=yes" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="https://www.mapquestapi.com/sdk/leaflet/v1.s/mq-map.js?key=Lupy5MnnvaRz7PBhwvmrEch3rgw8FZBC"></script>
 
     <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/map.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/config.js"></script>
 </head>
@@ -41,7 +45,7 @@
 
 
   <!-- FLASH GLUON ************************* !-->
-  
+
   <div id="flashgluon" class="panel">
       <div class="content_left">
           <h2>(Router-Einrichtung)</h2>
@@ -57,7 +61,7 @@
           <span class="einzug">&#8618; <a href="#routergluonconfig">Mit wenigen Klicks richtig einstellen</a></span><br />
           <span class="einzug">&#8618; <a href="#routerready">Aufstellen und anschließen</a></span><br />
           <span class="einzug">&#8618; <a href="#routernochmal">Konfiguration ändern</a></span><br />
-      </div>      
+      </div>
 
 <!-- --------------------------- noch kein Bedarf ------------------
       <div class="content_right">
@@ -71,29 +75,29 @@
 ---------------------------------------------------------------  -->
 
 	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
 
       <!-- Router besorgen ******************************* -->
 	  <p>&nbsp;</p>
       <div id="routerbesorgen" class="content_left">
           <span class="mediumtype einzug">Router besorgen</span><br />
-          <p>Auch wenn du schon einen Router für deinen eigenen DSL-Anschluß hast, wirst du dir für das Freifunk-Netz einen weiteren Router zulegen müssen. 
+          <p>Auch wenn du schon einen Router für deinen eigenen DSL-Anschluß hast, wirst du dir für das Freifunk-Netz einen weiteren Router zulegen müssen.
           Das liegt daran, dass er eine neue Betriebssoftware benötigt. Er wird per Kabel dann später mit deinem eigenen Router verbunden, wenn du einen hast.
-          </p> 
-          <p>Am Freifunk-Netz kannst du aber auch ohne eigenen DSL-Anschluß teilnehmen. Dann brauchst du aber bereits Freifunk-Router in deiner Reichweite, mit denen 
+          </p>
+          <p>Am Freifunk-Netz kannst du aber auch ohne eigenen DSL-Anschluß teilnehmen. Dann brauchst du aber bereits Freifunk-Router in deiner Reichweite, mit denen
           er sich dann verbinden kann.</p>
-                    
+
           <h3>Kaufen</h3>
-          <p>Du brauchst eine Entscheidungshilfe?</p> 
+          <p>Du brauchst eine Entscheidungshilfe?</p>
           <h3>Empfehlung</h3>
-          <p>Wir empfehlen aktuell den TP-LINK TL-WR841N und den TP-LINK TL-WR841ND (der gleiche nur mit abnehmbaren Antennen) als Einstiegsgeräte. 
+          <p>Wir empfehlen aktuell den TP-LINK TL-WR841N und den TP-LINK TL-WR841ND (der gleiche nur mit abnehmbaren Antennen) als Einstiegsgeräte.
           Für größere Installationen bieten sich ein TP-LINK TL-WDR3600 oder TL-WDR4300 an.</p>
           <h3>Unterstützte Modelle</h3>
           <p>Eine umfassende Liste, welche Geräte unterstützt werden, findest du hier: <br>
           <a href="http://wiki.freifunk.net/Freifunk_Firmware_Gluon/Hardware" target="_blank">Freifunk-Gluon-Hardware-Verzeichnis</a></p>
-      </div>      
+      </div>
 	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
 
 
       <!-- Auspacken ******************************* -->
@@ -101,17 +105,17 @@
       <div id="routerauspacken" class="content_left">
           <span class="mediumtype einzug">Auspacken</span><br />
           <p>Du hast deinen Router vor dir auf dem Tisch?! Dazu solltest du ein Netzteil haben, die evtl. abschraubbaren Antennen und ein kurzes Stück LAN-Kabel,
-          das wir für die Verbindung zwischen deinem Computer und dem Router benötigen. Den Rest: Papier und CDs benötigen wir nicht. 
-          </p> 
-                    
+          das wir für die Verbindung zwischen deinem Computer und dem Router benötigen. Den Rest: Papier und CDs benötigen wir nicht.
+          </p>
+
           <h3>Vorbereitungen</h3>
           <p>Bevor du loslegen kannst, solltest du ein paar Dinge vorbereiten. Du hast nämlich gleich keine Interverbindung mehr, wenn du dich mit deinem Router verbindest.
           Daher empfiehlt es sich am Computer die nachfolgenden Punkte erst zu erledigen, bevor du deinen neuen Router mit dem Rechner verbindest.</p>
           <p>Lasse diese Internet-Seite im Browser bis zum Ende geöffnet!</p>
-          
-      </div>      
+
+      </div>
 	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
 
 
       <!-- FF-Image besorgen ******************************* -->
@@ -119,28 +123,28 @@
       <div id="routerimagedownload" class="content_left">
           <span class="mediumtype einzug">Freifunk-Image besorgen</span><br />
           <p>Herauszufinden welche Gluon-Firmware du brauchst, ist ganz einfach. Der Router-Typ (1) und die Hardware-Version (2) stehen auf der Rückseite des Routers.
-          </p> 
+          </p>
           <p>Öffne das Verzeichnis mit unserer Freifunk-Software und suche anhand des unten aufgeführten Beispiels deine passende Datei. Beachte, dass wir
-          die Software getrennt für Freifunk-Mainz und Freifunk-Wiesbaden anbieten. Je nachdem wo du den Router aufstellen willst, solltest du hier die 
+          die Software getrennt für Freifunk-Mainz und Freifunk-Wiesbaden anbieten. Je nachdem wo du den Router aufstellen willst, solltest du hier die
           richtige Entscheidung treffen:</p>
           <ul>
           	<li>Verzeichnis für <a href="http://firmware.freifunk-mwu.de/mainz/stable/factory/" target="_blank">Freifunk-Mainz</a> öffnen<br>
           	<li>Verzeichnis für <a href="http://firmware.freifunk-mwu.de/wiesbaden/stable/factory/" target="_blank">Freifunk-Wiesbaden</a> öffnen<br>
           </ul>
 	  	  <p>&nbsp;</p>
-	
+
           <img src="images/FirmwareIndex.png" alt="Auszug aus dem Downloadverzeichnis"><br />
           <span class="bu">Fig.2&thinsp;&mdash;&thinsp;Finde den richtigen Eintrag anhand Modell und Hardware-Nummer</span>
-          <p>&nbsp;</p>        
+          <p>&nbsp;</p>
 	  	  <p>Klicke auf den gewünschten Eintrag und speichere dir diese Datei auf deinem Rechner für später.</p>
-          
-      </div>      
+
+      </div>
       <div class="content_right">
           <img src="images/Router-model-version.png" width="90%" height="90%" alt="Unterseite eines Routers"><br />
           <span class="bu">Fig.1&thinsp;&mdash;&thinsp;Auf der Unterseite steht immer die Modell-Nummer und die Hardware-Version</span>
       </div>
 	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
 
       <!-- Standort auf Karte bestimmen ******************************* -->
 	  <p>&nbsp;</p>
@@ -148,13 +152,25 @@
           <span class="mediumtype einzug">Standort auf Karte bestimmen</span><br />
           <p>Wir haben eine <a href="http://map.freifunk-mwu.de/geomap.html" target="_blank">Live-Karte</a>, wo jeder die gerade aktiven Freifunk-Knoten sehen kann.
           Wenn du willst, das auch dein Knoten später darauf erscheint, benötigst du die Koordinaten. Auch das ist recht einfach. </p>
-          <p>Rufe die Karte auf und zoome ganz dicht auf deinen gewünschten Standort heran. Dann klickst du oben auf den Button "Koordinaten beim nächsten Klick anzeigen".
-          Als nächstes klickst du auf die Stelle in der Karte, wo er erscheinen soll. Nun werden die Koordinaten in einer Box angezeigt. Kopiere sie dir über die Zwischenablage
-          an einen sicheren Platz auf deinem Computer. Wir brauchen sie erst am Schluß wieder.</p> 
+          <p>Zoome über die +/-–Tasten ganz dicht auf deinen gewünschten Standort heran. Mit gedrückter Maustaste kannst du den Ausschnitt außerdem verschieben.<br/>
+          Als nächstes klickst du auf die Stelle in der Karte, wo dein Router erscheinen soll. Nun werden die Koordinaten unter der Karte angezeigt.<br/>
+          Du kannst dir die Koordinaten über die Zwischenablage an einen sicheren Ort auf deinem Computer kopieren, wir brauchen sie erst am Schluß wieder. Sie werden dir aber an der Stelle, an der sie benötigt werden, auch noch einmal angezeigt.</p>
 
-      </div>      
+          <div id="map"></div>
+
+          <form>
+            <p>
+              <label class="map-label" for="node-lat">Breitengrad</label>
+              <input class="form-control" id="node-lat" data-content="node-lat" type="text"><br/>
+              <label class="map-label" for="node-long">Längengrad</label>
+              <input class="form-control" id="node-long" data-content="node-long" type="text"><br/>
+              <label>Kartenausschnitt festhalten <input class="form-control" id="maplock" type="checkbox"></label>
+            </p>
+          </form>
+
+      </div>
 	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
 
 
       <!-- Image flashen ******************************* -->
@@ -163,28 +179,28 @@
           <span class="mediumtype einzug">Freifunk-Image drauf packen</span><br />
           <p>Nun ist der Zeitpunkt gekommen, wo du den neuen Router mit deinem PC verbinden solltest, damit wir die neue Software - man nennt es auch "Image" oder die
           "Firmware" - aufspielen können.</p>
-          
+
           <h3>Anschließen</h3>
-          <p>Siehe Fig.3: Bitte schließe deinen Router (1) an eine Steckdose an – Das Kabel dazu ist dabei (3). Die Antenne (2) kannst du jetzt oder auch später aufschrauben. 
+          <p>Siehe Fig.3: Bitte schließe deinen Router (1) an eine Steckdose an – Das Kabel dazu ist dabei (3). Die Antenne (2) kannst du jetzt oder auch später aufschrauben.
           Verbinde dann den Router mit dem beiliegenden LAN-Kabel (4) mit Deinem Computer. </p>
 	  	  <p>&nbsp;</p>
           <img src="images/Gelbe_buchse.png" alt="Anschlüsse auf der Rückseite"><br />
           <span class="bu">Fig.4&thinsp;&mdash;&thinsp;Die Buchsen haben verschiedene Farben.</span>
 	  	  <p>&nbsp;</p>
 	  	  <p>Stecke dafür das Kabel in eine der gelben Buchsen. </p>
-      </div>      
+      </div>
       <div class="content_right">
           <img src="images/Dein_router.png" alt="Router und Zubehör"><br />
           <span class="bu">Fig.3&thinsp;&mdash;&thinsp;So oder ähnlich sollte der Inhalt aussehen.</span>
 	  	  <p>&nbsp;</p>
 	  </div>
 	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
       <div class="content_left">
           <h3>Im Menü folgen</h3>
-      	  <p>Jetzt kannst du den Router einfach über den Browser konfigurieren. Dazu rufst du in deinen Browser folgende Adresse auf: 
-      	  <a href="http://192.168.0.1" target="_blank">http://192.168.0.1</a>. Bevor du weitermachst, musst du dich erst anmelden. 
-      	  Der Benutzername ist bei TP-Link Routern "admin" und das Passwort "admin". Wie man bei anderen Geräten in die Einstellungen kommt 
+      	  <p>Jetzt kannst du den Router einfach über den Browser konfigurieren. Dazu rufst du in deinen Browser folgende Adresse auf:
+      	  <a href="http://192.168.0.1" target="_blank">http://192.168.0.1</a>. Bevor du weitermachst, musst du dich erst anmelden.
+      	  Der Benutzername ist bei TP-Link Routern "admin" und das Passwort "admin". Wie man bei anderen Geräten in die Einstellungen kommt
       	  ist unterschiedlich und steht im Handbuch des jeweiligen Gerätes.<p>
 		  <p>Dein Browserfenster müsste nun so aussehen – Folge hier der Verknüpfung “System Tools” im Menü links unten. </p>
 
@@ -193,35 +209,35 @@
           <span class="bu">Fig.5&thinsp;&mdash;&thinsp;Im Menü links unten auf "System Tools" klicken</span>
 	  	  <p>&nbsp;</p>
 
-		  <p>Als nächste wählst du aus dem Menü “Firmware Upgrade” (1). Danach die gespeicherte Freifunk-Software auswählen (2). 
+		  <p>Als nächste wählst du aus dem Menü “Firmware Upgrade” (1). Danach die gespeicherte Freifunk-Software auswählen (2).
 		  Nach einem Klick auf “Upgrade” (3) beginnt der Prozess.</p>
 
 	  	  <p>&nbsp;</p>
           <img src="images/TP_link_firmware.png" alt="Menü der Original-Software von TP-Link"><br />
           <span class="bu">Fig.6&thinsp;&mdash;&thinsp;Im Menü links unten auf "Firmware Upgrade" klicken</span>
-	   
+
 	  	  <p>&nbsp;</p>
           <img src="images/TP_link_firmware_file.png" alt="Menü der Original-Software von TP-Link"><br />
           <span class="bu">Fig.7&thinsp;&mdash;&thinsp;Die Aktion will noch einmal bestätigt werden.</span>
-		   
+
 	  	  <p>&nbsp;</p>
           <img src="images/TP_link_upgrade_progress.png" alt="Diese Aktion nicht unterbrechen!"><br />
           <span class="bu">Fig.8&thinsp;&mdash;&thinsp;Wenn der Laufbalken einmal loslegt wird es spannend.</span>
 	  	  <p>&nbsp;</p>
-		  
+
           <h3>Einspielen beendet</h3>
-      	  <p>Nachdem die Firmware fertig eingespielt ist, startet der Router neu. Das dauert so zwischen 1-2 Minuten. 
-      	  Dass der Router neu startet merkst du auch beim Betrachten der Lampen. Es gibt einen Moment da gehen alle Lampen 
-      	  gleichzeit kurz an, dann wieder aus. Jetzt beginnt die Startprozedur. Wenn danach das Lämpchen mit dem Zahnrad 
+      	  <p>Nachdem die Firmware fertig eingespielt ist, startet der Router neu. Das dauert so zwischen 1-2 Minuten.
+      	  Dass der Router neu startet merkst du auch beim Betrachten der Lampen. Es gibt einen Moment da gehen alle Lampen
+      	  gleichzeit kurz an, dann wieder aus. Jetzt beginnt die Startprozedur. Wenn danach das Lämpchen mit dem Zahnrad
       	  gemütlich vor sich hin blinkt, ist der Router im Config-Mode angekommen.</p>
-		  <p>Jetzt ist der Router nicht mehr unter der angegeben Adresse sichtbar und eine Fehlermeldung erscheint (siehe Fig.9). 
+		  <p>Jetzt ist der Router nicht mehr unter der angegeben Adresse sichtbar und eine Fehlermeldung erscheint (siehe Fig.9).
 		  Das ist gut so. Denn nun läuft die neue, tolle Freifunk Firmware auf deinem Router. <p>
-	  	  
+
           <img src="images/TP_link_firmware_reboot_finished.png" alt="Kein Anschluss mehr unter dieser Adresse"><br />
           <span class="bu">Fig.9&thinsp;&mdash;&thinsp;Die Adresse hat sich geändert, daher gibt es hier keinen Anschluss mehr.</span>
       </div>
   	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
 
 	  <p>&nbsp;</p>
 	  <!-- Gluon konfig ******************************* -->
@@ -234,52 +250,59 @@
 	      <img src="images/600px-Mz-6466b3595aa8_-_Node_WI_-_LuCI_(top).png" alt="Verbindung wieder herstellen"><br />
 	      <span class="bu">Fig.10&thinsp;&mdash;&thinsp;Unter dieser Adresse meldet sich die Konfigurationsseite.</span>
 	  	  <p>&nbsp;</p>
-	      <p>Wie du rechts oben erkennen kannst, befindest du dich im "Wizard"-Modus. Alle notwendigen Daten zur Inbetriebnahme sind 
-	      auf dieser einen Seite zusammengefaßt. Sie auzufüllen reicht normalerweise aus! <i>Vorab einen Blick in den Experten-Modus zu werfen ist trotzdem lohnenswert.</i></p> 
+	      <p>Wie du rechts oben erkennen kannst, befindest du dich im "Wizard"-Modus. Alle notwendigen Daten zur Inbetriebnahme sind
+	      auf dieser einen Seite zusammengefaßt. Sie auzufüllen reicht normalerweise aus! <i>Vorab einen Blick in den Experten-Modus zu werfen ist trotzdem lohnenswert.</i></p>
 
 	      <h3>Passwort setzen</h3>
 		  <p>Bevor du anfängst hier die ersten Zeilen auszufüllen, solltest du dem Router ein Passwort verpassen, mit dem man später im laufenden Betrieb Wartungsarbeiten durchführen kann.
-		  	Fehlt das, dann muss man immer vor Ort mit Kabel direkt an den Router gehen.  Gehe rechts oben in den Experten-Modus und dann auf "Remotezugriff". 
+		  	Fehlt das, dann muss man immer vor Ort mit Kabel direkt an den Router gehen.  Gehe rechts oben in den Experten-Modus und dann auf "Remotezugriff".
 		  	Mehr Details zu diesem Abschnitt findest du im <a href="http://wiki.freifunk-mainz.de/w/Howto/GluonKonfig#Remotezugriff" target="_blank">Wiki</a>.
 		  	Nach dem Speichern gehe zurück in den "Wizard-Modus" und lege los mit den folgenden Angaben:</p>
 	  	  <!--   Umbruch in neue Zeile  -->
-	      <br style="clear: both;"> 
-	      
+	      <br style="clear: both;">
+
 	      <h3>Name dieses Knotens</h3>
-	      <p>Als erstes solltest du deinem Router einen Namen geben. Nimm einfach einen, der dir gefällt und vielleicht etwas über den 
-	      Standort des Routers aussagt. Im Beispiel verwenden wir “Lisas-Freifunk”. Bitte achte darauf, dass keine Leerzeichen im Namen 
-	      enthalten sind. Verwende stattdessen einfach einen Bindestrich (“-“) oder Unterstrich (“_”). </p> 
+	      <p>Als erstes solltest du deinem Router einen Namen geben. Nimm einfach einen, der dir gefällt und vielleicht etwas über den
+	      Standort des Routers aussagt. Im Beispiel verwenden wir “Lisas-Freifunk”. Bitte achte darauf, dass keine Leerzeichen im Namen
+	      enthalten sind. Verwende stattdessen einfach einen Bindestrich (“-“) oder Unterstrich (“_”). </p>
           <img src="images/Freifunk_Nodename_Lisa.png" alt="Hier den Namen eingeben"><br />
           <span class="bu">Fig.11&thinsp;&mdash;&thinsp;Hier den Namen eingeben. So erscheint er auf der Karte wenn gewünscht.</span>
-	      
+
 	  	  <p>&nbsp;</p>
 	      <h3>Internetverbindung nutzen</h3>
-	      <p>Wenn du bei "Mesh-VPN aktivieren" ein Häkchen setzt, wird über deinen Internet-Anschluss eine verschlüsselte Verbindung 
+	      <p>Wenn du bei "Mesh-VPN aktivieren" ein Häkchen setzt, wird über deinen Internet-Anschluss eine verschlüsselte Verbindung
 	      zu den Freifunk-Servern hergestellt. Diese verbinden deinen Router dann mit weit entfernten Freifunk-Routern und dem Internet, ohne Störerhaftung.</p>
-	      <p>Wenn die Option deaktiviert bleibt, kann sich dein Router nur per Funk mit anderen Freifunk-Routern in der Nachbarschaft verbinden. 
+	      <p>Wenn die Option deaktiviert bleibt, kann sich dein Router nur per Funk mit anderen Freifunk-Routern in der Nachbarschaft verbinden.
 	      Internet-Zugang ist dann nur möglich, wenn einer der anderen Router ihn anbietet.</p>
-		  <p>Wir empfehlen dieses Häkchen zu setzen. </p> 
+		  <p>Wir empfehlen dieses Häkchen zu setzen. </p>
           <img src="images/Freifunk_meshvpn.png" alt="Internetverbindung per VPN"><br />
           <span class="bu">Fig.12&thinsp;&mdash;&thinsp;Wenn du einen DSL-Anschluss hast, nutze ihn ruhig.</span>
-	      
+
 	  	  <p>&nbsp;</p>
 	      <h3>Bandbreite einschränken</h3>
-	      <p>Wenn du einen normalen Internet-Anschluss hast (16 Mbit und mehr), wird dein Freifunk-Router im alltäglichen Betrieb nicht allzuviel von deiner Bandbreite in Anspruch nehmen.</p> 
-	      <p>Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen". Daraufhin erscheinen zwei neue Felder. 
+	      <p>Wenn du einen normalen Internet-Anschluss hast (16 Mbit und mehr), wird dein Freifunk-Router im alltäglichen Betrieb nicht allzuviel von deiner Bandbreite in Anspruch nehmen.</p>
+	      <p>Solltest du aber trotzdem eine Begrenzung eintragen wollen, setze den Haken "Mesh-VPN Bandbreite begrenzen". Daraufhin erscheinen zwei neue Felder.
 	      Trage in die beiden Felder die gewünschten Grenzen in Kbit/s ein. Wir empfehlen mindestens "8000" für Downstream und "500" für Upstream. </p>
-		  <p>Unsere Empfehlung: die Begrenzung nicht zu aktivieren.</p> 
+		  <p>Unsere Empfehlung: die Begrenzung nicht zu aktivieren.</p>
           <img src="images/2014-10-27_20_13_22-mz-6466b3595aa8_-_SpeedLimit_LuCI.jpg" alt="Sinnvolle Werte, falls du einschränken willst"><br />
           <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Sinvolle Werte, wenn die Bandbreite eingeschränkt werden soll.</span>
-	      
+
 	  	  <p>&nbsp;</p>
 	      <h3>Koordinaten setzen</h3>
-	      <p>Wenn du möchtest, dass dein neuer Knoten auf unserer Live-Karte auftauchen soll, sind hier deine am Anfang notierten Koordinaten einzutragen.</p> 
-          <img src="images/2014-10-27_20_15_06-mz-6466b3595aa8_-_Koordinaten_-_LuCI.jpg" alt="Die Korrdinaten hier eingeben"><br />
-          <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Die Koordinaten werden für die Karten-Dartstellung benötigt.</span>
-	      
+	      <p>Wenn du möchtest, dass dein neuer Knoten auf unserer Live-Karte auftauchen soll, sind hier deine am Anfang ermittelten Koordinaten einzutragen.</p>
+        <p>Deine Koordinaten lauten:</p>
+        <form>
+          <label class="map-label" for="node-lat-ro">Breitengrad</label>
+          <input class="form-control" id="node-lat-ro" data-content="node-lat" type="text"><br/>
+          <label class="map-label" for="node-long-ro">Längengrad</label>
+          <input class="form-control" id="node-long-ro" data-content="node-long" type="text">
+        </form><br/>
+        <img src="images/2014-10-27_20_15_06-mz-6466b3595aa8_-_Koordinaten_-_LuCI.jpg" alt="Die Korrdinaten hier eingeben"><br />
+        <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Die Koordinaten werden für die Karten-Dartstellung benötigt.</span>
+
 	  	  <p>&nbsp;</p>
 	      <h3>Kontaktdaten</h3>
-	      <p>Es kann immer mal Änderungen am Freifunk Netz geben, die so gravierend sind, dass du an deinen Router nochmal Hand anlegen musst. Dazu ist es empfehlenswert, wenn du an dieser Stelle etwas hinterlässt wie Telefonnummer oder E-Mail Adresse. Diese Information ist im gesamten Freifunk Netzwerk öffentlich zugänglich, wird aber an keiner Stelle im Internet veröffentlicht.</p> 
+	      <p>Es kann immer mal Änderungen am Freifunk Netz geben, die so gravierend sind, dass du an deinen Router nochmal Hand anlegen musst. Dazu ist es empfehlenswert, wenn du an dieser Stelle etwas hinterlässt wie Telefonnummer oder E-Mail Adresse. Diese Information ist im gesamten Freifunk Netzwerk öffentlich zugänglich, wird aber an keiner Stelle im Internet veröffentlicht.</p>
           <img src="images/Mz-6466b3595aa8-kontakt.png" alt="Die Kontaktdaten hier eingeben"><br />
           <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Die Kontaktdaten benötigen wir um dich über wichtige Änderungen informieren zu können.</span>
 
@@ -289,13 +312,13 @@
 	      <p>Auf der dann erscheinenden Abschluss-Seite bekommst du die letzten Hinweise. Zum Beispiel wird dort der VPN-Schlüssel ausgegeben, den du uns per E-Mail schicken solltest.
 	      Den müssen unsere Server kennen, wenn du den Router an deinen DSL-Anschluss anklemmen willst. Solange der uns nicht bekannt ist, wird er keine Verbindung bekommen.</p>
 	      <p>Der Schlüssel erscheint innerhalb des gestrichelten Feldes. Ist er nicht vorhanden, dann hast du vergessen "VPN-Mesh" in der Konfigurations-Seite anzuschalten.</p>
-	      
+
           <img src="images/600px-2014-10-27_20_24_28-mz-6466b3595aa8_fertigmeldung.jpg" alt="Fertigmeldung und Schlüsselanzeige"><br />
           <span class="bu">Fig.13&thinsp;&mdash;&thinsp;Wenn der Schlüssel angezeigt wird, sende ihn uns per E-Mail zu.</span>
 
-	  </div>  	        
+	  </div>
  	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
 
   	  <p>&nbsp;</p>
 	  <!-- Aufstellen und anschließen ******************************* -->
@@ -326,8 +349,8 @@
 
 	  </div>
   	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
-	  
+      <br style="clear: both;">
+
   	  <p>&nbsp;</p>
 	  <!-- Konfig ändern ******************************* -->
 	  <div id="routernochmal" class="content_left">
@@ -344,7 +367,7 @@
           erreichbar. Die "Sternchen"-Lampe blinkt wieder langsam vor sich hin, wenn es soweit ist.</p>
 
           <h3>Speichern &amp; Neustart</h3>
-		  <p>Wenn du fertig bist, klicke wieder auf "Speichern &amp; Neustart" um den Vorgang abzuschließen. Jetzt wichtig: wenn sich der Schlüssel geändert hat, was in seltenen Fällen passieren kann, 
+		  <p>Wenn du fertig bist, klicke wieder auf "Speichern &amp; Neustart" um den Vorgang abzuschließen. Jetzt wichtig: wenn sich der Schlüssel geändert hat, was in seltenen Fällen passieren kann,
 		  dann melde ihn wieder per E-Mail zum Eintragen.
 
 	  	  <p>&nbsp;</p>
@@ -352,7 +375,7 @@
 
 	  </div>
   	  <!--   Umbruch in neue Zeile  -->
-      <br style="clear: both;"> 
+      <br style="clear: both;">
 
 
   </div>
