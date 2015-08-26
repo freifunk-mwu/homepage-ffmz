@@ -17,16 +17,16 @@ jQuery(document).ready(function($) {
         $("[data-content='node-long']").val(e.latlng.lng.toFixed(6));
 
         // Karte nach auswahl festhalten (Maplock für Mobilgeräte, um wieder scrollen zu können)
-        $('#maplock').prop('checked', true);
-        map.dragging.disable();
+        // $('#maplock').prop('checked', true);
+        // map.dragging.disable();
     }
 
     // Maplock funktion
-    $('#maplock').change(function() {
-        if($(this).is(":checked")) {
-            map.dragging.disable();
-        } else {
-            map.dragging.enable();
-        }
-    });
+    // $('#maplock').change(function() {
+    //     if($(this).is(":checked")) {
+    //         map.dragging.disable();
+    //     } else {
+    //         map.dragging.enable();
+    //     }
+    // });
 });
