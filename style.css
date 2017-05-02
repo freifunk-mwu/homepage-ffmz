@@ -157,6 +157,9 @@ h3 {
             min-height: 90%;
             color: white;
         }
+	#impressum a {
+	    color: white;
+ 	}
 
 
 #navigation {
