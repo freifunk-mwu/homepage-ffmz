@@ -156,7 +156,7 @@
         <div class="content_left">
             <h2>(Hotspotkarte)</h2>
             <h3>Aktive Hotspots in Mainz</h3>
-            <p>Hier kannst du alle derzeit aktiven Freifunk Knoten (Hotspots) sehen. Jeder gründe Punkt stellt einen solchen dar. Eine größere Version der Karte ist <a href="http://map.freifunk-mwu.de/" target="new">hier</a> verfügbar.</p>
+            <p>Hier kannst du alle derzeit aktiven Freifunk Knoten (Hotspots) sehen. Jeder gründe Punkt stellt einen solchen dar. Eine größere Version der Karte ist <a href="http://map.freifunk-mainz.de/" target="new">hier</a> verfügbar.</p>
             <p>Wenn du einen eigenen Freifunk Router betreiben willst und damit auch auf dieser Karte auftauchen willst (optional), kannst du dir die <a href="Freifunk-Router-aufstellen.html">Anleitung zur Routerkonfiguration</a> ansehen. </p>
             <p>Bei Fragen oder Problemen schreib uns gerne eine Mail an <a href="mailto:kontakt@freifunk-mainz.de">kontakt@freifunk-mainz.de</a>.</p>
 
