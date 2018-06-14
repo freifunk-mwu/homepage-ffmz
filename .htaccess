@@ -1,3 +1,5 @@
+RedirectMatch 404 /\.git
+
 Redirect 301 /satzung http://wiki.freifunk-mainz.de/w/Verein/Satzung
 Redirect 301 /verein http://wiki.freifunk-mainz.de/w/Verein
 Redirect 301 /howto http://wiki.freifunk-mainz.de/w/Howto/Tinc-Node_konfiguration
