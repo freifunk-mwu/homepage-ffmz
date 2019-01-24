@@ -79,7 +79,7 @@ $(document).ready(function(){
     function invert() {
 
         // invert menu
-        var offset = $("#impressum").offset();
+        var offset = $("#datenschutz").offset();
         if(offset === null) {
             return;
         }
@@ -113,5 +113,3 @@ $(document).ready(function(){
     }
 
 });
-
-
