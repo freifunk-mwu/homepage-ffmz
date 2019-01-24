@@ -165,7 +165,7 @@ h3 {
             box-shadow: none;
         }
 
-	#impressum a, #datenschutz a {
+	div#impressum a, div#datenschutz a {
 	    color: white;
  	}
 
