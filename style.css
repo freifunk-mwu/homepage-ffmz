@@ -157,7 +157,15 @@ h3 {
             min-height: 90%;
             color: white;
         }
-	#impressum a {
+
+        #datenschutz {
+            background: #1a1a1a;
+            min-height: 90%;
+            color: white;
+            box-shadow: none;
+        }
+
+	div#impressum a, div#datenschutz a {
 	    color: white;
  	}
 
@@ -178,7 +186,7 @@ h3 {
         margin-left: 20px;
         margin-top: 0px;
 		padding:0;
-        width:770px;
+        width:930px;
         display:block;
         height:60px;
         text-align: left;
